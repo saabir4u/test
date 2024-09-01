@@ -1,1 +1,23 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YourNamespace.MainPage">
+
+    <Grid>
+        <!-- Background content -->
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <!-- Your other content here -->
+            <Button Text="Start Operation"
+                    Clicked="OnStartOperationClicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <!-- Centered Activity Indicator -->
+        <ActivityIndicator x:Name="activityIndicator"
+                           IsRunning="False"
+                           Color="Blue"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+    </Grid>
+</ContentPage>
 
